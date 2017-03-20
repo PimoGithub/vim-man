@@ -10,7 +10,7 @@ if !exists('g:vim_man_cmd')
   let g:vim_man_cmd='/usr/bin/man'
 endif
 
-command! -nargs=* -bar -complete=customlist,man#completion#run Man  call man#get_page('horizontal', <f-args>)
+command! -nargs=* -bar -complete=customlist,man#completion#run PluginMan  call man#get_page('horizontal', <f-args>)
 command! -nargs=* -bar -complete=customlist,man#completion#run Sman call man#get_page('horizontal', <f-args>)
 command! -nargs=* -bar -complete=customlist,man#completion#run Vman call man#get_page('vertical',   <f-args>)
 command! -nargs=* -bar -complete=customlist,man#completion#run Tman call man#get_page('tab',        <f-args>)
